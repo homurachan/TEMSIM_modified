@@ -61,7 +61,7 @@ def main():
 			apix=float(starline[i].split()[dect_n-1])/float(starline[i].split()[mag_n-1])*10000.0
 			voltage=float(starline[i].split()[vol_n-1])
 			cs=float(starline[i].split()[cs_n-1])
-			ampc=float(starline[i].split()[ampcont_n-1])
+			ampc=100.0*float(starline[i].split()[ampcont_n-1])
 			center=ny/2
 			if dfu>dfv:
 				dfang = math.fmod(angle+360.+90., 360.)
