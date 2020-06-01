@@ -83,7 +83,8 @@ int main()
     }
 	pi = (float) (4.0 * atan( 1.0 ));
 	int j=0;
-	v0=300;
+	cout<<"Enter the voltage in keV:"<<endl;
+	cin>>v0;
     cout << "Wavefunction size in pixels, Nx,Ny:" << endl;
     cin >> nx >> ny;
 	cout << "Slice thickness (in Angstroms):" << endl;
