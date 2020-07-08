@@ -2928,7 +2928,7 @@ double vatom( int Z, double radius )
    if( feTableRead == 0 ) nfe = ReadfeTable();
 
    r = fabs( radius );
-   if( r < 1.0e-10 ) r = 1.0e-10;  /* avoid singularity at r=0 */
+   if( r < 1.0e-2 ) r = 1.0e-2;  /* avoid singularity at r=0 */
    suml = sumg = 0.0;
 
    /* Lorenztians */
