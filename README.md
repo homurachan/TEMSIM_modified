@@ -2,6 +2,9 @@
 Modified version of EJ Kirkland's TEMSIM of computem package multislice simualtion software.
 Please cite: Kirkland, Earl J. Advanced computing in electron microscopy. New York: Plenum Press, 1998.
 This software produce images suitable for cryo-EM multislice simulation without gaussian noise.
+# PS:
+I mode this repository open because the release of https://doi.org/10.1016/j.ultramic.2020.113094 , and I think this package could do better.
+I did many simulations, the result was that multiple elastic scattering effect is SIGNIFICANTLY WEAKER THAN THE EWALD SPHERE EFFECT. If we could not overcome the Ewald Sphere effect on small proteins, it will be meaningless to even consider multiple elastic scattering effect.
 # General compilatlion.
 You need sfftw-dev. Just make.
 1. You need convert pdb file to a xyz file. Use pdb2xyz_3angle. Complie the program by:
