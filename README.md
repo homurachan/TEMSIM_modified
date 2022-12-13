@@ -5,7 +5,7 @@ This software produce images suitable for cryo-EM multislice simulation without 
 # PS:
 I mode this repository open because the release of https://doi.org/10.1016/j.ultramic.2020.113094 , and I think this package could do better.
 I did many simulations, the result was that multiple elastic scattering effect is SIGNIFICANTLY WEAKER THAN THE EWALD SPHERE EFFECT. If we could not overcome the Ewald Sphere effect on small proteins, it will be meaningless to even consider multiple elastic scattering effect.
-# General compilatlion.
+# General compilation.
 You need sfftw-dev. Just make.
 1. You need convert pdb file to a xyz file. Use pdb2xyz_3angle. Complie the program by:
 g++ -O3 -o pdb2xyz_3angle pdb2xyz_3angle.cpp slicelib.o floatTIFF.o cfpix.o -lfftw3f_threads -lfftw3f
