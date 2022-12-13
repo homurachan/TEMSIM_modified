@@ -1,1 +1,1 @@
-
+Rename the needed file to "eulerfile.txt", and place it on the folder where you run the xyz2slic_with_random_center_oxygen_v2 program.
