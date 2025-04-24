@@ -5,6 +5,13 @@ This software produce images suitable for cryo-EM multislice simulation without 
 # PS:
 I mode this repository open because the release of https://doi.org/10.1016/j.ultramic.2020.113094 , and I think this package could do better.
 I did many simulations, the result was that multiple elastic scattering effect is SIGNIFICANTLY WEAKER THAN THE EWALD SPHERE EFFECT. If we could not overcome the Ewald Sphere effect on small proteins, it will be meaningless to even consider multiple elastic scattering effect.
+
+# NOTE (20250424)
+
+2.1  The former "#define eulerfile_line 500000" at 'xyz2slic_with_random_center_oxygen_v2.cpp' will lead to segment error on ubuntu 20.04 and later. Reduce it to 50000.
+
+2.2  There must be a eulerfile.txt on the working folder.
+
 # General compilation.
 You need sfftw-dev. Just make.
 1. You need convert pdb file to a xyz file. Use pdb2xyz_3angle. Complie the program by:
