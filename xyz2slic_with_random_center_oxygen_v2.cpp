@@ -17,7 +17,7 @@ using namespace std;
 #include "autoslic.hpp"    //  the calculation engine
 
 #define MANY_ABERR      //  define to include many aberrations
-#define eulerfile_line 500000
+#define eulerfile_line 50000
 
 #ifdef USE_OPENMP
 #include <omp.h>
