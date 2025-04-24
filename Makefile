@@ -92,7 +92,7 @@ slicview: slicview.cpp ${MYLIBS}
 	${CC} -o slicview slicview.cpp ${WLIBS}
 
 stemslic: stemslic.cpp ${MYLIBS}
-	${CC} -o stemslic stemslic.cpp ${WLIBS}$
+	${CC} -o stemslic stemslic.cpp ${WLIBS}
 
 sumpix: sumpix.cpp ${MYLIBS}
 	${CC} -o sumpix sumpix.cpp ${WLIBS}
